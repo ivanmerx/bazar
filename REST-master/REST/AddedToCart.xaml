@@ -1,0 +1,17 @@
+﻿<Page         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:REST"
+        xmlns:Entity="clr-namespace:REST.Entity" x:Class="REST.AddedToCart"
+        mc:Ignorable="d"
+        Title="AddedToCart" Height="749.295" Background="White" Width="836.889">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Zbozi bylo pridano!" FontSize="40" TextAlignment="Center" VerticalAlignment="Top" Height="73" Width="468"/>
+        <WrapPanel VerticalAlignment="Top" Margin="0,98,0,0">
+            <Button x:Name="daleNakupovat" Content="Dále nakupovat" Height="124" Width="200" Click="daleNakupovat_Click"/>
+            <Button x:Name="doKose" Content="Do koše" Height="124" Width="200" Click="doKose_Click"/>
+        </WrapPanel>
+    </Grid>
+</Page>

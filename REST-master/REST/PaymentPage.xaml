@@ -1,0 +1,27 @@
+﻿<Page  x:Class="REST.PaymentPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:REST"
+        xmlns:Entity="clr-namespace:REST.Entity"
+        mc:Ignorable="d"
+        Title="PaymentPage" Height="749.295" Width="836.889" Background="White">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" x:Name="Title" Margin="199,22,0,0" TextWrapping="Wrap" Text="Kupujete:" FontSize="20" VerticalAlignment="Top" Height="30" Width="469"/>
+        <WrapPanel Margin="10,57,-10,-57">
+            <TextBlock FontSize="20" Text="Jmeno"></TextBlock>
+            <TextBox x:Name="jmeno" Width="216"/>
+        </WrapPanel>
+        <WrapPanel Margin="10,94,-10,-95">
+            <TextBlock FontSize="20" Text="Prijmeni"></TextBlock>
+            <TextBox x:Name="prijmeni" Width="216"/>
+        </WrapPanel>
+        <WrapPanel Margin="10,132,-10,-132">
+            <TextBlock FontSize="20" Text="Email"></TextBlock>
+            <TextBox x:Name="email" Width="216"/>
+        </WrapPanel>
+        <Button Content="Koupit!" Margin="10,180,597,495" Click="Button_Click"></Button>
+    </Grid>
+</Page>
